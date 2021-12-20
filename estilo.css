@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald&family=Pacifico&family=Patrick+Hand&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: #000000;
+}
+
+header{
+  background-color: grey;
+  font-family: 'Patrick Hand', cursive;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 38% 62%;
+  align-items: center;
+  justify-items: center;
+  
+}
+  
+  
+.divH{
+  color: white;
+  margin: 1%;
+  font-size: 170%;
+  font-weight: bold;
+}
+  
+nav ul{
+  display: flex; 
+}
+  
+li{
+  list-style: none;
+  margin: 1rem;
+}
+
+li a{
+  color: #f7f3e8;
+  text-decoration: none;
+  font-size:140%;
+}
+
+.imagenPortada{
+  width: 100%;
+}
+
+.hNosotros{
+  background-color: grey;
+  color: white;
+  font-size: 400%;
+  text-align: center;
+}
+
+.nosotrosMain{
+  background-color: #90CBFB;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+  "equipo parrafo"
+  "individual parrafo"
+  ;
+}
+  
+.imgDivUno{
+  grid-area: equipo;
+}
+
+.imgDivDos{
+  grid-area: individual;
+}
+
+.nosotrosMain p{
+  grid-area: parrafo;
+}
+
+.pDiv{
+  text-align: center;
+
+}
+.nosotrosMain img{
+  border-radius: 15px;
+  border-color: #3075c4;
+  border-style: solid;
+  border-width: 5px;
+  width: 50%;
+  margin: 5%;
+}
+
+footer{
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+footer div{
+  padding: 2%;
+  margin: 10px;
+}
+
+div a{
+  color: #f7f3e8;
+  text-decoration: none;
+  font-size:140%;
+}
+
+.hProductos{
+  background-color: grey;
+  color: white;
+  font-size: 400%;
+  text-align: center;
+  border: solid black 5px;
+}
+
+.grilla{
+  background-color: lightblue;
+  padding: 2% 0;
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  grid-template-columns: 25% 25% 25%;
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.grilla img{
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    }
+  nav ul{
+    font-size: 70%;
+    }
+  .hNosotros{
+    font-size: 80%;
+    color: black;
+    }
+  
+  .hProductos{
+    font-size: 80%;
+    color: black;
+  }
+  .grilla {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.3fr;
+    grid-template-rows: repeat(2, 0.5fr) 0.5fr;
+    gap: 0.3rem;
+  }
+  
+}
