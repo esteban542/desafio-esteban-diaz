@@ -11,7 +11,7 @@ body{
 }
 
 header{
-  background-color: grey;
+  background-image: linear-gradient(to right, blueviolet, blue);
   font-family: 'Patrick Hand', cursive;
   text-transform: uppercase;
   display: grid;
@@ -38,6 +38,10 @@ li{
   margin: 1rem;
 }
 
+li:hover{
+  transform: scale(1.5,1.5);
+}
+
 li a{
   color: #f7f3e8;
   text-decoration: none;
@@ -49,7 +53,7 @@ li a{
 }
 
 .hNosotros{
-  background-color: grey;
+  background-image: linear-gradient(to right, blueviolet, blue);
   color: white;
   font-size: 400%;
   text-align: center;
@@ -91,8 +95,12 @@ li a{
   margin: 5%;
 }
 
+.nosotrosMain img:hover{
+  transform: scale(1.2,1.2);
+}
+
 footer{
-  background-color: grey;
+  background-image: linear-gradient(to right, blue, blueviolet, purple);
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
@@ -112,7 +120,7 @@ div a{
 }
 
 .hProductos{
-  background-color: grey;
+  background-image: linear-gradient(to right, blueviolet, blue);
   color: white;
   font-size: 400%;
   text-align: center;
@@ -120,7 +128,7 @@ div a{
 }
 
 .grilla{
-  background-color: lightblue;
+  background-color: lightcoral;
   padding: 2% 0;
   display: grid;
   grid-template-rows: 30% 30% 30%;
@@ -133,6 +141,10 @@ div a{
 
 .grilla img{
   width: 100%;
+}
+
+.grilla img:hover{
+  transform: scale(1.2,1.2);
 }
 
 @media screen and (max-width: 500px) {
